@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #f4acb7;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            /* Podés visitar: https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox#el_modelo_flexible para entender el modelo Flexbox */
+            display: flex;
+            /* Establece el contenedor como un contenedor flex */
+            flex-wrap: wrap;
+            /* Permite que los elementos se envuelvan en líneas adicionales si no hay suficiente espacio */
+            justify-content: center;
+            /* Centra los elementos a lo largo del eje principal horizontal */
+            align-items: center;
+            /* Centra los elementos a lo largo del eje secundario vertical */
+            background-color: #ffcad4;
+            margin: 0 50px;
+            /* Margen a la derecha y a la izquierda. El valor 0 es para el margen superior e inferior */
+
+        }
+
+        header {
+            display: flex;
+            /* Establece el encabezado como un contenedor flex */
+            align-items: baseline;
+            /* Alinea los elementos del encabezado a lo largo de la línea de base */
+            justify-content: space-evenly;
+            /* Distribuye los elementos del encabezado de manera uniforme a lo largo del eje principal horizontal */
+            padding: 25px;
+        }
+
+        .container-title {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            width: 250px;
+            padding: 20px;
+            background-color: #ffe5d9;
+            margin: 10px;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        aside {
+            flex: 4;
+            margin-left: 50px;
+            background-color: #f0e6ef;
+            margin-right: 20px;
+        }
+
+        aside li {
+            padding-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 10px;
+            background-color: #ffb3c6;
+        }
+
+        p {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Sengunda Parte
+        </h1>
+        <div class="container-image">
+            <img src="https://coolors.co/assets/img/logo.svg" alt="Imagen de Producto">
+        </div>
+        <div>
+            <h1 class="container-title" style="margin-right: 200px;">4ª1</h1>
+        </div>
+    </header>
+    <div style="display: flex;">
+        <div>
+            <main class="container">
+                <div class="box">
+                    <img src="https://picsum.photos/200" alt="">
+                    <h3>Título 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Enlace 1</a>
+                </div>
+                <div class="box">
+                    <img src="https://picsum.photos/200" alt="">
+                    <h3>Título 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Enlace 2</a>
+                </div>
+                <div class="box">
+                    <img src="https://picsum.photos/200" alt="">
+                    <h3>Título 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Enlace 3</a>
+                </div>
+                <div class="box">
+                    <img src="https://picsum.photos/200" alt="">
+                    <h3>Título 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Enlace 4</a>
+                </div>
+                <div>
+
+                    <!--Pregunta 1-->
+                    <h2 id="p1">¿Qué propiedad CSS se utiliza para establecer un contenedor como contenedor flex?</h2>
+                    <p>La propiedad CSS que se utiliza para establecer un contenedor como contenedor flex es "flex o
+                        inline-flex""</p>
+                    <!--Pregunta 2-->
+                    <h2 id="p2">¿Qué valor se utiliza en la propiedad `flex-wrap` para permitir que los elementos se
+                        envuelvan en líneas adicionales si no hay suficiente espacio?</h2>
+                    <p>El valor que se utiliza en la propiedad "flex-wrap" es "wrap"</p>
+                    <!--Pregunta 3-->
+                    <h2 id="p3">¿Cuál es la propiedad CSS que se utiliza para centrar los elementos a lo largo del eje
+                        principal horizontal en un contenedor flex?</h2>
+                    <p>La propiedad "justify-content:center" se utiliza para centrar los elementos a lo largo del eje
+                        principal horizontal </p>
+                    <!--Pregunta 4-->
+                    <h2 id="p4"> ¿Cuál es la propiedad CSS que se utiliza para centrar los elementos a lo largo del eje
+                        secundario vertical en un contenedor flex?</h2>
+
+                    <p>La propiedad "align-items:center" se utiliza para centrar los elementos a lo largo del eje
+                        secundario
+                        vertical</p>
+
+                    <!--Pregunta 5-->
+                    <h2 id="p5"> ¿Cuál es el propósito del valor `justify-content: space-between` en la propiedad
+                        `justify-content` del encabezado? </h2>
+
+                    <p>La propiedad "justify-content" se utiliza para definir el espacio entre y al rededor de los items
+                        flex. El valor "space-between" se utiliza para distribuir a los elementos de manera uniforme: al
+                        principio, centro y final del contenedor</p>
+
+                    <!--Pregunta 6-->
+                    <h2 id="p6"> ¿Cuál es el propósito del valor `align-items: baseline` en la propiedad `align-items`
+                        del encabezado?</h2>
+                    <p>La propiedad "align-items" se encarga de controlar la alineacion de los elementos flexibles en el
+                        eje
+                        transversal. El valor "baseline" se encarga de alinear los elementos del encabezado a lo largo
+                        de la
+                        linea de base</p>
+                    <!--Pregunta 7-->
+                    <h2 id="p7">¿Qué propiedad CSS se utiliza para establecer el ancho del contenedor del título del
+                        header?
+                    </h2>
+                    <p>Se utiliza la clase "container-title" con la propiedad "width" para establecer el ancho del
+                        contenedor del titulos del header</p>
+
+                    <!--Pregunta 8-->
+                    <h2 id="p8">¿Qué propiedad CSS se utiliza para alinear el texto del título en el centro?</h2>
+                    <p>La propiedad CSS que se utiliza para alinear el texto del titulo en el centro es
+                        "text-align:center"
+                    </p>
+
+                    <!--Pregunta 9-->
+                    <h2 id="p9"> ¿Cuál es la propiedad CSS que se utiliza para establecer un margen a la derecha y a la
+                        izquierda del contenedor?
+                    </h2>
+                    <p>La propiedad CSS que se utiliza para establecer un margen para los cuatros lados es "margin-left"
+                        y "margin-right"</p>
+                    <!--Pregunta 10-->
+                    <h2 id="p10">¿Qué propiedad CSS se utiliza para establecer el color de fondo del contenedor
+                        principal?
+                    </h2>
+                    <p>La propiedad "background-color" se utiliza para establecer el color de fondo del contenedor</p>
+                </div>
+            </main>
+        </div>
+        <aside>
+            <h2 style="text-align: center;">Indice</h2>
+            <ul style="width: 100;width: 140px; list-style-type: none;">
+                <li><a href="#p1">Pregunta 1</a></li>
+                <li><a href="#p2">Pregunta 2</a></li>
+                <li><a href="#p3">Pregunta 3</a></li>
+                <li> <a href="#p4">Pregunta 4</a></li>
+                <li> <a href="#p5">Pregunta 5</a></li>
+                <li><a href="#p6">Pregunta 6</a></li>
+                <li><a href="#p7">Pregunta 7</a></li>
+                <li><a href="#p8">Pregunta 8</a></li>
+                <li><a href="#p9">Pregunta 9</a></li>
+                <li> <a href="#p10">Pregunta 10</a></li>
+
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <div style="display: flex;  justify-content: space-evenly;">
+            <div>
+                <p>Dulce Ana Vigna Coronel</p>
+            </div>
+            
+            <div><a href="https://campus.cet30.edu.ar/"><img src="logo.png" alt="" width="50"></a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
