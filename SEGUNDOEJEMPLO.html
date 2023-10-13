@@ -2,84 +2,7 @@
 <html>
 
 <head>
-    <style>
-        body {
-            background-color: #f4acb7;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .container {
-            /* Podés visitar: https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox#el_modelo_flexible para entender el modelo Flexbox */
-            display: flex;
-            /* Establece el contenedor como un contenedor flex */
-            flex-wrap: wrap;
-            /* Permite que los elementos se envuelvan en líneas adicionales si no hay suficiente espacio */
-            justify-content: center;
-            /* Centra los elementos a lo largo del eje principal horizontal */
-            align-items: center;
-            /* Centra los elementos a lo largo del eje secundario vertical */
-            background-color: #ffcad4;
-            margin: 0 50px;
-            /* Margen a la derecha y a la izquierda. El valor 0 es para el margen superior e inferior */
-
-        }
-
-        header {
-            display: flex;
-            /* Establece el encabezado como un contenedor flex */
-            align-items: baseline;
-            /* Alinea los elementos del encabezado a lo largo de la línea de base */
-            justify-content: space-evenly;
-            /* Distribuye los elementos del encabezado de manera uniforme a lo largo del eje principal horizontal */
-            padding: 25px;
-        }
-
-        .container-title {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .container-image {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .box {
-            width: 250px;
-            padding: 20px;
-            background-color: #ffe5d9;
-            margin: 10px;
-            text-align: center;
-        }
-
-        h1,
-        h2 {
-            padding: 10px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        aside {
-            flex: 4;
-            margin-left: 50px;
-            background-color: #f0e6ef;
-            margin-right: 20px;
-        }
-
-        aside li {
-            padding-bottom: 20px;
-        }
-
-        footer {
-            margin-top: 10px;
-            background-color: #ffb3c6;
-        }
-
-        p {
-            margin: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="2parte.css">
 </head>
 
 <body>
@@ -188,8 +111,8 @@
             </main>
         </div>
         <aside>
-            <h2 style="text-align: center;">Indice</h2>
-            <ul style="width: 100;width: 140px; list-style-type: none;">
+            <h2>Indice</h2>
+            <ul>
                 <li><a href="#p1">Pregunta 1</a></li>
                 <li><a href="#p2">Pregunta 2</a></li>
                 <li><a href="#p3">Pregunta 3</a></li>
@@ -205,11 +128,11 @@
         </aside>
     </div>
     <footer>
-        <div style="display: flex;  justify-content: space-evenly;">
+        <div class="divfooter">
             <div>
                 <p>Dulce Ana Vigna Coronel</p>
             </div>
-            
+
             <div><a href="https://campus.cet30.edu.ar/"><img src="logo.png" alt="" width="50"></a></div>
         </div>
     </footer>
