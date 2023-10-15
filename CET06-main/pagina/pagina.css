@@ -1,0 +1,83 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+html {
+    background-image: url(ll.png);
+}
+
+main {
+    background-color: white;
+}
+footer {
+    margin-top: 10px;
+    background-color: #ffb3c6;
+}
+
+/*formato texto*/
+header {
+    text-align: center;
+}
+
+p,
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+footer p{
+    margin-left: 10px;
+
+}
+
+/*Cajas*/
+.conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.padre {
+    display: flex;
+    justify-content: left;
+    justify-content: space-around;
+}
+.producto {
+    width: 33%;
+}
+.producto-img {
+    width: 250px;
+    height: 218px;
+}/*Imagen*/
+/*Nav*/
+nav {
+    background-color: #f0e6ef;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+nav a {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+nav form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1.5em;
+}
