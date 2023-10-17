@@ -13,14 +13,25 @@ main {
 }
 footer {
     margin-top: 10px;
-    background-color: #ffd6ff
+    background-color: #ffd6ff;
+    margin-top: 30px;
 }
+.separar{
+
+    /*/hacer en el pie de pagina las redes/*/
+      text-decoration: none;
+      border: 3px;
+      display: inline-block;
+    }
 
 /*formato texto*/
 header {
     text-align: center;
     font-size: 1.5em;
     font-family: 'Times New Roman', Times, serif;
+    position:sticky;   
+    top: 0; 
+background-color: white;    
 }
 
 p,
@@ -29,6 +40,7 @@ h2 {
 }
 h2{
     text-align: center;
+    margin-top: 25px;
 }
 footer p{
     margin-left: 10px;
@@ -46,6 +58,9 @@ footer p{
     display: flex;
     justify-content: left;
     justify-content: space-around;
+}
+.producto1{
+    width: 50%;
 }
 .producto {
     width: 33%;
@@ -87,12 +102,5 @@ nav form {
     padding: 0 1.5em;
 }
 nav a:hover{
-   color: #000; 
-}
+    text-decoration-line: underline !important;}
 
-
-/*
-- agregar hover a los nav
-- 
-
-*/
