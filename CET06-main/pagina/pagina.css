@@ -13,17 +13,22 @@ main {
 }
 footer {
     margin-top: 10px;
-    background-color: #ffb3c6;
+    background-color: #ffd6ff
 }
 
 /*formato texto*/
 header {
     text-align: center;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 p,
 h2 {
     font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    text-align: center;
 }
 footer p{
     margin-left: 10px;
@@ -51,7 +56,7 @@ footer p{
 }/*Imagen*/
 /*Nav*/
 nav {
-    background-color: #f0e6ef;
+    background-color: #ffd6ff;
     display: flex;
     margin-bottom: 10px;
 }
@@ -81,3 +86,13 @@ nav form {
     height: 100%;
     padding: 0 1.5em;
 }
+nav a:hover{
+   color: #000; 
+}
+
+
+/*
+- agregar hover a los nav
+- 
+
+*/
